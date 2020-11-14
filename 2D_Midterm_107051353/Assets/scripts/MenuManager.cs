@@ -1,14 +1,17 @@
 ﻿
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class MeunManager : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
-   void  StartGame()
+  public void  StartGame()
     {
-
+        print("Start");
+        SceneManager.LoadScene(1);
     }
-    void QuitGame()
+   public void QuitGame()
     {
-    
+        print("Quit");
+        Application.Quit();
     }
 }
